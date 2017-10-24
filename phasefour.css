@@ -1,3 +1,96 @@
-body{
+body {
+  width: 100vw;
+  height: 100vh;
+  min-height: 50vh;
+  min-width: 50vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
 
+.container1 {
+  width: 95%;
+  height: 95%;
+  border: .1em solid black;
+}
+
+.logobar {
+ width: 100%;
+ height: 10%;
+ border-bottom: .1em solid white;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.logotitle {
+ width: 40%;
+ height: 100%;
+ background-color: white;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.logo {
+ width: 20%;
+ height: 100%;
+ background-color: white;
+ transition: 1s ease all;
+}
+
+.logotitletext {
+ font-family: Impact;
+ font-style: Italic;
+ letter-spacing: .5em
+}
+
+.menubar {
+ width: 100%;
+ height: 5%;
+ display: flex;
+ flex-wrap: wrap;
+}
+
+.menutab {
+ width: calc(100%/5);
+ height: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ background-color: white;
+ transition: .5s ease all;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+ border: .1em solid black;
+}
+
+.menutab:hover {
+  box-shadow: .75em .75em black;
+  background-color: yellow;
+}
+
+.menutabtext {
+  font-family: Impact;
+}
+
+.carouselcontainerouter {
+  height: 85%; 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.carouselcontainerinner {
+  height: 85%; 
+  width: 95%;
+  border: .1em solid black;
+  display: flex;
+  flex-wrap: wrap;
 }

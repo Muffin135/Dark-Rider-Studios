@@ -1,8 +1,6 @@
 body {
   width: 100vw;
   height: 100vh;
-  min-height: 50vh;
-  min-width: 50vw;
   background-color: white;
   display: flex;
   flex-wrap: wrap;
@@ -69,12 +67,17 @@ body {
  border: .1em solid black;
 }
 
+.menutab:hover {
+  box-shadow: .75em .75em black;
+  background-color: yellow;
+}
+
 .menutabtext {
   font-family: Impact;
 }
 
 .carouselcontainerouter {
-  height: 85%; 
+  height: 75%; 
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -90,3 +93,37 @@ body {
   flex-wrap: wrap;
 }
 
+.mobile {
+	display: none;
+}
+
+@media only screen and (max-width: 600px) {
+	
+	.container1 {
+		width: 100%;
+		height: 100%;
+		border: none;
+	}
+	
+	.mobile {
+		font-family: Impact;
+		letter-spacing: 1em;
+		color: black;
+	}
+	
+	.menubar {
+		width: 100%;
+		height: 10%;
+		border-top: .1em solid black;
+		border-bottom: .1em solid black;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.menutab {
+		display: none;
+	}
+
+}

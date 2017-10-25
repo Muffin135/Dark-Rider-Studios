@@ -125,5 +125,9 @@ body {
 	.menutab {
 		display: none;
 	}
+	
+	.carouselcontainerouter {
+ 		 height: 75%; 
+	}
 
 }

@@ -363,4 +363,25 @@ a:visited {
  		 height: 75%; 
 	}
 	
+	.tabcontenttext1 {
+		font-family: Calibri;
+		font-size: .75em;
+		letter-spacing: 0em;
+		margin-left: .75em;
+		}
+
+	.tabcontenttext2 {
+		font-family: Calibri;
+		font-size: .75em;
+		letter-spacing: 0em;
+		margin-left: .75em;
+	}
+
+	.tabcontenttext3 {
+		font-family: Calibri;
+		font-size: .75em;
+		letter-spacing: 0em;
+		margin-left: .75em;
+	}
+	
 }

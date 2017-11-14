@@ -384,4 +384,9 @@ a:visited {
 		margin-left: .75em;
 	}
 	
+	.pagetextcaption {
+ 	        font-size: .9em;
+		letter-spacing: .2em;
+	}
+	
 }

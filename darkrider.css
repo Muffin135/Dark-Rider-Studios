@@ -328,6 +328,10 @@ body {
   letter-spacing: .1em;
 }
 
+a:visited {
+ text-decoration: none;
+ color: black; 
+}
 
 @media only screen and (max-width: 800px) {
 	

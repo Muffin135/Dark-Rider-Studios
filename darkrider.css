@@ -401,6 +401,10 @@ a:visited {
 	.albumcaptionbottom:hover {
  	        letter-spacing: 0em;
 	}
+	
+	.albumpic {
+ 	        background-size: 100%;
+	}
 
 	
 }

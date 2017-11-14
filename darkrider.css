@@ -1,0 +1,363 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  min-height: 50vh;
+  min-width: 50vw;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.container1 {
+  width: 99%;
+  height: 99%;
+  margin: 0;
+  padding: 0;
+}
+
+.logobar {
+ width: 100%;
+ height: 10%;
+ border-bottom: .05em solid black;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ background-color: pink;
+}
+
+.logotitle {
+ width: 40%;
+ height: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+}
+
+.logo {
+ width: 20%;
+ height: 80%;
+ transition: 1s ease all;
+ background-image: url("https://user-images.githubusercontent.com/23199807/31148529-cf063676-a841-11e7-8b7f-45b36784c633.PNG");
+ background-repeat:no-repeat;
+ background-size:contain;
+ background-position: center; 
+}
+
+.logotitletext {
+ font-family: Impact;
+ font-style: Italic;
+ font-size: 1.75em;
+ letter-spacing: .5em;
+ background-color: yellow;
+}
+
+.menubar {
+ width: 100%;
+ height: 5%;
+ display: flex;
+ flex-wrap: wrap;
+ background-color: pink;
+}
+
+.menutab {
+ width: calc(100%/5);
+ height: 100%;
+ display: flex;
+ flex-wrap: wrap;
+ transition: .5s ease all;
+ justify-content: center;
+ align-items: center;
+ margin: auto;
+}
+
+.menutab:hover {
+  box-shadow: .75em .75em black;
+  background-color: yellow;
+}
+
+.menutabtext {
+  font-weight: 550;
+  font-family: Calibri;
+  font-size: 1.1em;
+}
+
+.carouselcontainerouter {
+  height: 85%; 
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.pageinner {
+  height: 85%; 
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 2.5%
+}
+  
+.contenttitle {
+  width: 100%;
+  height: 25%;
+  border-bottom: .05em solid black;
+}
+
+.header {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: yellow;
+  border-bottom: .05em solid black;
+}
+
+.caption {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagetexttitle {
+  font-family: Calibri;
+  font-size: 1.5em;
+  font-weight: 699;
+  letter-spacing: .4em;
+}
+
+.pagetextcaption {
+  font-family: Calibri;
+  font-size: 1.25em;
+  font-weight: 500;
+  letter-spacing: .5em;
+}
+
+.contentbody {
+  width: 100%;
+  height: 75%;
+  overflow: scroll; 
+  overflow-x: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.tabbody {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: .05em solid black;
+}
+
+.tabimage {
+  width: 10%;
+  height: 100%;
+  background-image: url("http://themostdefinitely.com/wp-content/uploads/2015/06/giorgio.jpg");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tabcontent {
+  width: 70%;
+  height: 100%;
+}
+
+.tabcontenttop {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.tabcontentbottom {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.tabcontenttext1 {
+  font-family: Calibri;
+  font-size: 1em;
+  letter-spacing: .1em;
+  margin-left: .75em;
+}
+
+.tabcontenttext2 {
+  font-family: Calibri;
+  font-size: small;
+  letter-spacing: .1em;
+  margin-left: .75em;
+}
+
+.tabcontenttext3 {
+  font-family: Calibri;
+  font-size: medium;
+  letter-spacing: .1em;
+  margin-left: .75em;
+}
+
+.tabjavalink:hover {
+    animation-name: example;
+    animation-duration: 1s;
+}
+
+@keyframes example {
+    0%   {box-shadow: inset 0em 0 0 0 yellow;
+          text-decoration: none;}
+    100% {box-shadow: inset 20em 0 0 0 yellow;
+          text-decoration: underline;}
+}
+
+.tabjavalink {
+  width: 19%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobile {
+  	display: none;
+}
+
+.albumcover {
+  width: calc(100%/3);
+  height: 75%;
+}
+
+.albumpic {
+  width: 100%;
+  height: 75%;
+  background-image: url("https://user-images.githubusercontent.com/23199807/31806043-4d82df9c-b51a-11e7-86e8-2e3d2885bd40.png");
+  background-size: 50% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.albumpic2 {
+  width: 100%;
+  height: 75%;
+  background-image: url("https://user-images.githubusercontent.com/23199807/32765886-53566050-c8c1-11e7-9c2c-1f46f24f3c3c.png");
+  background-size: 50% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.albumpic3 {
+  width: 100%;
+  height: 75%;
+  background-image: url("https://user-images.githubusercontent.com/23199807/32766175-917f598a-c8c2-11e7-883f-a640dd9c283b.png");
+  background-size: 50% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.albumpic4 {
+  width: 100%;
+  height: 75%;
+  background-image: url("https://user-images.githubusercontent.com/23199807/32766352-72c80f90-c8c3-11e7-9740-9c9b15248ea5.png");
+  background-size: 50% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.albumpic5 {
+  width: 100%;
+  height: 75%;
+  background-image: url("https://user-images.githubusercontent.com/23199807/31148529-cf063676-a841-11e7-8b7f-45b36784c633.PNG");
+  background-size: 50% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.albumpic6 {
+  width: 100%;
+  height: 75%;
+  background-image: url("https://user-images.githubusercontent.com/23199807/32767033-83854656-c8c6-11e7-98b4-af8dafe5287c.png");
+  background-size: 50% 95%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.albumcaption {
+  width: 100%;
+  height: 25%;
+  border: .05em solid black;
+}
+
+.albumcaptiontop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  font-family: calibri;
+  font-size: .9em;
+  font-weight: bold;
+}
+
+.albumcaptionbottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50%;
+  font-family: calibri;
+  font-size: 1em;
+  transition: 0.5s ease all;
+}
+
+.albumcaptionbottom:hover {
+  text-decoration: underline;
+  letter-spacing: .1em;
+}
+
+
+@media only screen and (max-width: 800px) {
+	
+  .container1 {
+  	width: 100%;
+		height: 100%;
+		border: none;
+	}
+	
+	.mobile {
+		font-family: Impact;
+		letter-spacing: 1em;
+		color: black;
+	}
+	
+	.menubar {
+		width: 100%;
+		height: 10%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+	}
+	
+	.menutab {
+		display: none;
+	}
+	
+	.carouselcontainerouter {
+ 		 height: 75%; 
+	}
+	
+}

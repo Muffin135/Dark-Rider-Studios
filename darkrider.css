@@ -389,13 +389,16 @@ a:visited {
 		letter-spacing: .2em;
 	}
 	
+	.albumcover {
+	  width: calc(100%/2);
+	}
 	
 	.albumcaptiontop {
-	  font-size: .5em;
+	  font-size: .6em;
 	}
 
 	.albumcaptionbottom {
-	  font-size: .5em;
+	  font-size: .6em;
 	}
 	
 	.albumcaptionbottom:hover {

@@ -363,12 +363,20 @@ a:visited {
  		 height: 75%; 
 	}
 	
+	.tabbody {
+  		height: calc(100%/3);
+	}
+	
+	.tabimage {
+  		background-size: 100% 30%;
+	}
+	
 	.tabcontenttext1 {
 		font-family: Calibri;
 		font-size: .75em;
 		letter-spacing: 0em;
 		margin-left: .75em;
-		}
+	}
 
 	.tabcontenttext2 {
 		font-family: Calibri;

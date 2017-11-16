@@ -15,6 +15,8 @@ body {
 .container1 {
   width: 99%;
   height: 99%;
+  min-width: 50%;
+  min-height: 50%;
   margin: 0;
   padding: 0;
 }
@@ -65,8 +67,8 @@ body {
  background-color: pink;
 }
 
-.menutab {
- width: calc(100%/5);
+a {
+ width: calc(100%/4);
  height: 100%;
  display: flex;
  flex-wrap: wrap;
@@ -76,7 +78,7 @@ body {
  margin: auto;
 }
 
-.menutab:hover {
+a:hover {
   box-shadow: .75em .75em black;
   background-color: yellow;
 }
@@ -230,29 +232,35 @@ body {
 }
 
 .mobile {
-  	display: none;
+    display: none;
 }
 
 .albumcover {
   width: calc(100%/3);
   height: 75%;
+  margin-top: .5em;
+}
+
+img {
+  background-size: cover; 
+  background-position: 50%;
 }
 
 .albumpic {
   width: 100%;
   height: 75%;
   background-image: url("https://user-images.githubusercontent.com/23199807/31806043-4d82df9c-b51a-11e7-86e8-2e3d2885bd40.png");
-  background-size: 50% 95%;
-  background-position: center;
   background-repeat: no-repeat;
+  background-size: contain; 
+  background-position: 50%;
 }
 
 .albumpic2 {
   width: 100%;
   height: 75%;
   background-image: url("https://user-images.githubusercontent.com/23199807/32765886-53566050-c8c1-11e7-9c2c-1f46f24f3c3c.png");
-  background-size: 50% 95%;
-  background-position: center;
+  background-size: contain; 
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
@@ -260,8 +268,8 @@ body {
   width: 100%;
   height: 75%;
   background-image: url("https://user-images.githubusercontent.com/23199807/32766175-917f598a-c8c2-11e7-883f-a640dd9c283b.png");
-  background-size: 50% 95%;
-  background-position: center;
+  background-size: contain; 
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
@@ -269,8 +277,8 @@ body {
   width: 100%;
   height: 75%;
   background-image: url("https://user-images.githubusercontent.com/23199807/32766352-72c80f90-c8c3-11e7-9740-9c9b15248ea5.png");
-  background-size: 50% 95%;
-  background-position: center;
+  background-size: contain; 
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
@@ -278,8 +286,8 @@ body {
   width: 100%;
   height: 75%;
   background-image: url("https://user-images.githubusercontent.com/23199807/31148529-cf063676-a841-11e7-8b7f-45b36784c633.PNG");
-  background-size: 50% 95%;
-  background-position: center;
+  background-size: contain; 
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
@@ -287,8 +295,8 @@ body {
   width: 100%;
   height: 75%;
   background-image: url("https://user-images.githubusercontent.com/23199807/32767033-83854656-c8c6-11e7-98b4-af8dafe5287c.png");
-  background-size: 50% 95%;
-  background-position: center;
+  background-size: contain; 
+  background-position: 50%;
   background-repeat: no-repeat;
 }
 
@@ -346,7 +354,7 @@ a:visited {
 		color: black;
 	}
 	
-	.menubar {
+	a {
 		width: 100%;
 		height: 10%;
 		display: flex;
@@ -412,33 +420,4 @@ a:visited {
 	.albumcaptionbottom:hover {
  	        letter-spacing: 0em;
 	}
-	
-	.albumpic {
- 	        background-size: 100%;
-	}
-	
-	.albumpic2 {
- 	        background-size: 100%;
-	}
-	
-	.albumpic3 {
- 	        background-size: 100%;
-	}
-	
-	.albumpic4 {
- 	        background-size: 100%;
-	}
-
-	.albumpic5 {
- 	        background-size: 100%;
-	}
-	
-	.albumpic6 {
- 	        background-size: 100%;
-	}
-
-
-
-
-	
 }

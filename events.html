@@ -7,12 +7,14 @@
  		<meta name="viewport" content="width=device-width, initial-scale=1">
  		<link href="css/icons/astros.ico" rel="icon" type="image/x-icon" />
  		<title>Dark Rider</title>
- 		<link rel="stylesheet" href="darkrider.css">
+ 		<link rel="stylesheet" href="events.css">
  	</head>
  
  	<body>
  		<div class="container1">
- 			<div class="logobar">
+ 			
+			<!-- Bar with the Logo -->
+			<div class="logobar">
  				<div class="logotitle">
  					<div class="logotitletext">
  						Dark
@@ -26,13 +28,15 @@
  					</div>
  				</div>
  			</div>
+			<!-- Bar with the Logo -->
  		
-		<div class="menubar">
+			<!-- Bar with the Menu -->
+			<div class="menubar">
 				<div class="mobile">
 					Menu
 				</div>
 				
-				<a href="https://muffin135.github.io/Dark-Rider-Studios/store.html">
+				<a class="menutab" href="https://muffin135.github.io/Dark-Rider-Studios/store.html">
 					<div class="menutab">
 						<div class="menutabtext">
 							News
@@ -40,7 +44,7 @@
 					</div>
 				</a>
 				
-				<a href="https://muffin135.github.io/Dark-Rider-Studios/events.html">
+				<a class="menutab" href="https://muffin135.github.io/Dark-Rider-Studios/events.html">
 					<div class="menutab">
 						<div class="menutabtext">
 							Artists
@@ -48,7 +52,7 @@
 					</div>
 				</a>
 				
-				<a href="https://muffin135.github.io/Dark-Rider-Studios/store.html">
+				<a class="menutab" href="https://muffin135.github.io/Dark-Rider-Studios/store.html">
 					<div class="menutab">
 						<div class="menutabtext">
 							Store
@@ -56,7 +60,7 @@
 					</div>
 				</a>
 				
-				<a href="https://muffin135.github.io/Dark-Rider-Studios/events.html">
+				<a class="menutab" href="https://muffin135.github.io/Dark-Rider-Studios/events.html">
 					<div class="menutab">
 						<div class="menutabtext">
 							Events
@@ -64,55 +68,155 @@
 					</div>
 				</a>
 			</div>
- 			
+			<!-- Bar with the Menu -->
+			
+			<!-- Main Content Area -->
  			<div class="carouselcontainerouter">
-   		<div class="pageinner">
+				
+				<div class="pageinner">
+				
  				<!-- Beginning of title bar -->
- 				<div class="contenttitle">
- 					<div class="header">
- 						<div class="pagetexttitle">
- 							Events
- 						</div>
- 					</div>
- 					<div class="caption">
- 						<div class="pagetextcaption">
- 							Upcoming concerts, shows, and tours
- 						</div>
- 					</div>
- 				</div>
+					<div class="contenttitle">
+						<div class="header">
+							<div class="pagetexttitle">
+								Events
+							</div>
+						</div>
+						
+						<div class="caption">
+							<div class="pagetextcaption">
+								Upcoming concerts, shows, and tours
+							</div>
+						</div>
+					</div>
  				<!-- End of title bar -->
+				
  				  <div class="contentbody">
-             <!-- Standard tab layout for body -->
-             <div class="tabbody">
-                <div class="tabimage">
-               
-                </div>
-                <div class="tabcontent">
-                   <div class="tabcontenttop">
-                     <div class="tabcontenttext1">
-                       Mr. Wuffins "Finesse Thy Metro" 
-                       North America Tour
-                     </div>
-                   </div>
-                   <div class="tabcontentbottom">
-                     <div class="tabcontenttext2">
-                       Visting Cities: San Francisco, Los Angeles, Chicago, Miami, NYC, Mexico City, Toronto
-                     </div>
-                   </div>
-                </div>
-                <div class="tabjavalink">
-                   <div class="tabcontenttext3">
+				  
+				<!-- Standard tab layout for body -->
+					<div class="tabbody" id="body-one">
+				
+						<div class="tabimage" id="image-one"> </div>
+                
+						<div class="tabcontent"  id="tab-one">
+							
+							<div class="tabcontenttop">
+								<div class="tabcontenttext1">
+									Mr. Wuffins "Finesse Thy Metro" North America Tour
+								</div>
+							</div>
+							
+							<div class="tabcontentbottom">
+								<div class="tabcontenttext2">
+									Visting Cities: San Francisco, Los Angeles, Chicago, Miami, NYC, Mexico City, Toronto
+								</div>
+							</div>
+						</div>
+				
+				<!-- Code for buying -->
+					<div class="purchasecontainer" id="tix-begin">
+			 
+						<div class="select">
+							<div class="selecttext">
+								Select Desired Dates
+							</div>
+						</div>
+			  
+						<div class="calendar">
+			  
+							<div class="weeks">
+				 
+								<div class="sidingone">
+					
+									<div class="eventdate" id="sanfran" onclick="addTix1(this)">
+										<div class="eventdatetext"> San Fransisco 8/12 - 8/14 </div>
+									</div>
+					  
+									<div class="eventdate" id="la" onclick="addTix2(this)">
+										<div class="eventdatetext"> Los Angeles 8/17 - 8/20 </div>
+									</div>
+					  
+									<div class="eventdate" id="chiraq" onclick="addTix3(this)">
+										<div class="eventdatetext"> Chicago 8/24 - 8/26 </div>
+									</div>
+					  
+									<div class="eventdate" id="miami" onclick="addTix4(this)">
+										<div class="eventdatetext"> Miami 8/24 - 8/26 </div>
+									</div>
+					  
+									<div class="eventdate" id="nyc" onclick="addTix5(this)">
+										<div class="eventdatetext"> NYC 8/24 - 8/26 </div>
+									</div>
+					  
+								</div>
+					
+								<div class="sidingtwo">
+					
+									<div class="eventdate" id="tor" onclick="addTix6(this)">
+										<div class="eventdatetext"> Toronto 8/24 - 8/26 </div>
+									</div>
+					  
+									<div class="eventdate" id="mex" onclick="addTix7(this)">
+										<div class="eventdatetext"> Mexico City 8/24 - 8/26 </div>
+									</div>
+					  
+									<div class="eventdate">
+					
+									</div>
+					  
+									<div class="eventdate">
+					
+									</div>
+					  
+									<div class="eventdate">
+					
+									</div>
+					  
+								</div>
+					
+							</div>
+				 
+							<div class="checkout">
+							
+								<div class="window">
+					
+									<div class="total">
+										Total
+									</div>
+					
+									<div class="finalprice" id="payup">
+							
+									</div>
+					
+									<div class="proceed" id="proceed">
+										Checkout
+									</div>
+						
+								</div>
+							</div>
+				 
+						</div>
+			  
+			</div>
+		<!-- End -->
+				
+			<div class="tabjavalink" onclick="changeContent(this)">
+			
+				<div class="tabcontenttext3">
                      Purchase Tickets
-                   </div>
                 </div>
-             </div>
+				
+            </div>
+             
+		</div>
              <!-- Standard tab layout for body -->
+			 
              <!-- Standard tab layout for body -->
-             <div class="tabbody">
-                <div class="tabimage">
+             <div class="tabbody" id="body-one">
+                <div class="tabimage" id="image-one">
                
                 </div>
-                <div class="tabcontent">
+                <div class="tabcontent" id="tab-one">
                    <div class="tabcontenttop">
                      <div class="tabcontenttext1">
                        Mr. Wuffins "Finesse Thy Metro" 
@@ -125,6 +229,95 @@
                      </div>
                    </div>
                 </div>
+				
+					<!-- Code for buying -->
+			<div class="purchasecontainer" id="tix-begin">
+			 
+			  <div class="select">
+				<div class="selecttext">
+				Select Desired Dates
+				</div>
+			  </div>
+			  
+			  <div class="calendar">
+			  
+				 <div class="weeks">
+				 
+					<div class="sidingone">
+					
+					  <div class="eventdate" id="sanfran" onclick="addTix1(this)">
+						<div class="eventdatetext"> San Fransisco 8/12 - 8/14 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="la" onclick="addTix2(this)">
+						<div class="eventdatetext"> Los Angeles 8/17 - 8/20 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="chiraq" onclick="addTix3(this)">
+						<div class="eventdatetext"> Chicago 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="miami" onclick="addTix4(this)">
+						<div class="eventdatetext"> Miami 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="nyc" onclick="addTix5(this)">
+						<div class="eventdatetext"> NYC 8/24 - 8/26 </div>
+					  </div>
+					  
+					</div>
+					
+					<div class="sidingtwo">
+					
+					  <div class="eventdate" id="tor" onclick="addTix6(this)">
+						<div class="eventdatetext"> Toronto 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="mex" onclick="addTix7(this)">
+						<div class="eventdatetext"> Mexico City 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					
+					</div>
+					
+					
+				 </div>
+				 
+				 <div class="checkout">
+					<div class="window">
+					
+						<div class="total">
+							Total
+						</div>
+					
+						<div class="finalprice" id="payup">
+							
+						</div>
+					
+						<div class="proceed" id="proceed">
+							Checkout
+						</div>
+						
+					</div>
+				 </div>
+				 
+			  </div>
+			  
+			</div>
+		<!-- End -->
+				
                 <div class="tabjavalink">
                    <div class="tabcontenttext3">
                      Purchase Tickets
@@ -132,12 +325,13 @@
                 </div>
              </div>
              <!-- Standard tab layout for body -->
+			 
              <!-- Standard tab layout for body -->
-             <div class="tabbody">
-                <div class="tabimage">
+             <div class="tabbody" id="body-two">
+                <div class="tabimage" id="image-two">
                
                 </div>
-                <div class="tabcontent">
+                <div class="tabcontent" id="tab-two">
                    <div class="tabcontenttop">
                      <div class="tabcontenttext1">
                        Mr. Wuffins "Finesse Thy Metro" 
@@ -150,7 +344,96 @@
                      </div>
                    </div>
                 </div>
-                <div class="tabjavalink">
+				
+					<!-- Code for buying -->
+			<div class="purchasecontainer" id="tix-begin-two">
+			 
+			  <div class="select">
+				<div class="selecttext">
+				Select Desired Dates
+				</div>
+			  </div>
+			  
+			  <div class="calendar">
+			  
+				 <div class="weeks">
+				 
+					<div class="sidingone">
+					
+					  <div class="eventdate" id="rio" onclick="addTix14(this)">
+						<div class="eventdatetext"> Rio 8/12 - 8/14 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="paolo" onclick="addTix15(this)">
+						<div class="eventdatetext"> Sao Paolo 8/17 - 8/20 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="monte" onclick="addTix16(this)">
+						<div class="eventdatetext"> Montevideo 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="buenaire" onclick="addTix17(this)">
+						<div class="eventdatetext"> Buenos Aires 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="santi" onclick="addTix18(this)">
+						<div class="eventdatetext"> Santiago 8/24 - 8/26 </div>
+					  </div>
+					  
+					</div>
+					
+					<div class="sidingtwo">
+					
+					  <div class="eventdate">
+						
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					
+					</div>
+					
+					
+				 </div>
+				 
+				 <div class="checkout">
+					<div class="window">
+					
+						<div class="total">
+							Total
+						</div>
+					
+						<div class="finalprice" id="payup-two">
+							
+						</div>
+					
+						<div class="proceed" id="proceed-two">
+							Checkout
+						</div>
+						
+					</div>
+				 </div>
+				 
+			  </div>
+			  
+			</div>
+		<!-- End -->
+				
+                <div class="tabjavalink" onclick="changeContentTwo(this)">
                    <div class="tabcontenttext3">
                      Purchase Tickets
                    </div>
@@ -176,6 +459,95 @@
                      </div>
                    </div>
                 </div>
+				
+					<!-- Code for buying -->
+			<div class="purchasecontainer" id="tix-begin">
+			 
+			  <div class="select">
+				<div class="selecttext">
+				Select Desired Dates
+				</div>
+			  </div>
+			  
+			  <div class="calendar">
+			  
+				 <div class="weeks">
+				 
+					<div class="sidingone">
+					
+					  <div class="eventdate" id="sanfran" onclick="addTix1(this)">
+						<div class="eventdatetext"> San Fransisco 8/12 - 8/14 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="la" onclick="addTix2(this)">
+						<div class="eventdatetext"> Los Angeles 8/17 - 8/20 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="chiraq" onclick="addTix3(this)">
+						<div class="eventdatetext"> Chicago 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="miami" onclick="addTix4(this)">
+						<div class="eventdatetext"> Miami 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="nyc" onclick="addTix5(this)">
+						<div class="eventdatetext"> NYC 8/24 - 8/26 </div>
+					  </div>
+					  
+					</div>
+					
+					<div class="sidingtwo">
+					
+					  <div class="eventdate" id="tor" onclick="addTix6(this)">
+						<div class="eventdatetext"> Toronto 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="mex" onclick="addTix7(this)">
+						<div class="eventdatetext"> Mexico City 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					
+					</div>
+					
+					
+				 </div>
+				 
+				 <div class="checkout">
+					<div class="window">
+					
+						<div class="total">
+							Total
+						</div>
+					
+						<div class="finalprice" id="payup">
+							
+						</div>
+					
+						<div class="proceed" id="proceed">
+							Checkout
+						</div>
+						
+					</div>
+				 </div>
+				 
+			  </div>
+			  
+			</div>
+		<!-- End -->
+				
                 <div class="tabjavalink">
                    <div class="tabcontenttext3">
                      Purchase Tickets
@@ -202,6 +574,95 @@
                      </div>
                    </div>
                 </div>
+				
+					<!-- Code for buying -->
+			<div class="purchasecontainer" id="tix-begin">
+			 
+			  <div class="select">
+				<div class="selecttext">
+				Select Desired Dates
+				</div>
+			  </div>
+			  
+			  <div class="calendar">
+			  
+				 <div class="weeks">
+				 
+					<div class="sidingone">
+					
+					  <div class="eventdate" id="sanfran" onclick="addTix1(this)">
+						<div class="eventdatetext"> San Fransisco 8/12 - 8/14 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="la" onclick="addTix2(this)">
+						<div class="eventdatetext"> Los Angeles 8/17 - 8/20 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="chiraq" onclick="addTix3(this)">
+						<div class="eventdatetext"> Chicago 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="miami" onclick="addTix4(this)">
+						<div class="eventdatetext"> Miami 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="nyc" onclick="addTix5(this)">
+						<div class="eventdatetext"> NYC 8/24 - 8/26 </div>
+					  </div>
+					  
+					</div>
+					
+					<div class="sidingtwo">
+					
+					  <div class="eventdate" id="tor" onclick="addTix6(this)">
+						<div class="eventdatetext"> Toronto 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="mex" onclick="addTix7(this)">
+						<div class="eventdatetext"> Mexico City 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					
+					</div>
+					
+					
+				 </div>
+				 
+				 <div class="checkout">
+					<div class="window">
+					
+						<div class="total">
+							Total
+						</div>
+					
+						<div class="finalprice" id="payup">
+							
+						</div>
+					
+						<div class="proceed" id="proceed">
+							Checkout
+						</div>
+						
+					</div>
+				 </div>
+				 
+			  </div>
+			  
+			</div>
+		<!-- End -->
+				
                 <div class="tabjavalink">
                    <div class="tabcontenttext3">
                      Purchase Tickets
@@ -228,6 +689,95 @@
                      </div>
                    </div>
                 </div>
+				
+					<!-- Code for buying -->
+			<div class="purchasecontainer" id="tix-begin">
+			 
+			  <div class="select">
+				<div class="selecttext">
+				Select Desired Dates
+				</div>
+			  </div>
+			  
+			  <div class="calendar">
+			  
+				 <div class="weeks">
+				 
+					<div class="sidingone">
+					
+					  <div class="eventdate" id="sanfran" onclick="addTix1(this)">
+						<div class="eventdatetext"> San Fransisco 8/12 - 8/14 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="la" onclick="addTix2(this)">
+						<div class="eventdatetext"> Los Angeles 8/17 - 8/20 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="chiraq" onclick="addTix3(this)">
+						<div class="eventdatetext"> Chicago 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="miami" onclick="addTix4(this)">
+						<div class="eventdatetext"> Miami 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="nyc" onclick="addTix5(this)">
+						<div class="eventdatetext"> NYC 8/24 - 8/26 </div>
+					  </div>
+					  
+					</div>
+					
+					<div class="sidingtwo">
+					
+					  <div class="eventdate" id="tor" onclick="addTix6(this)">
+						<div class="eventdatetext"> Toronto 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="mex" onclick="addTix7(this)">
+						<div class="eventdatetext"> Mexico City 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					
+					</div>
+					
+					
+				 </div>
+				 
+				 <div class="checkout">
+					<div class="window">
+					
+						<div class="total">
+							Total
+						</div>
+					
+						<div class="finalprice" id="payup">
+							
+						</div>
+					
+						<div class="proceed" id="proceed">
+							Checkout
+						</div>
+						
+					</div>
+				 </div>
+				 
+			  </div>
+			  
+			</div>
+		<!-- End -->
+				
                 <div class="tabjavalink">
                    <div class="tabcontenttext3">
                      Purchase Tickets
@@ -250,10 +800,99 @@
                    </div>
                    <div class="tabcontentbottom">
                      <div class="tabcontenttext2">
-                       Visting Cities: Rio de Janeiro, Sao Paolo, Montevideo, Buenos Aires, Santiago
+                       Location: Edinburgh, Scotland
                      </div>
                    </div>
                 </div>
+				
+					<!-- Code for buying -->
+			<div class="purchasecontainer" id="tix-begin">
+			 
+			  <div class="select">
+				<div class="selecttext">
+				Select Desired Dates
+				</div>
+			  </div>
+			  
+			  <div class="calendar">
+			  
+				 <div class="weeks">
+				 
+					<div class="sidingone">
+					
+					  <div class="eventdate" id="sanfran" onclick="addTix1(this)">
+						<div class="eventdatetext"> San Fransisco 8/12 - 8/14 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="la" onclick="addTix2(this)">
+						<div class="eventdatetext"> Los Angeles 8/17 - 8/20 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="chiraq" onclick="addTix3(this)">
+						<div class="eventdatetext"> Chicago 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="miami" onclick="addTix4(this)">
+						<div class="eventdatetext"> Miami 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="nyc" onclick="addTix5(this)">
+						<div class="eventdatetext"> NYC 8/24 - 8/26 </div>
+					  </div>
+					  
+					</div>
+					
+					<div class="sidingtwo">
+					
+					  <div class="eventdate" id="tor" onclick="addTix6(this)">
+						<div class="eventdatetext"> Toronto 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate" id="mex" onclick="addTix7(this)">
+						<div class="eventdatetext"> Mexico City 8/24 - 8/26 </div>
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					  <div class="eventdate">
+					
+					  </div>
+					  
+					
+					</div>
+					
+					
+				 </div>
+				 
+				 <div class="checkout">
+					<div class="window">
+					
+						<div class="total">
+							Total
+						</div>
+					
+						<div class="finalprice" id="payup">
+							
+						</div>
+					
+						<div class="proceed" id="proceed">
+							Checkout
+						</div>
+						
+					</div>
+				 </div>
+				 
+			  </div>
+			  
+			</div>
+		<!-- End -->
+				
                 <div class="tabjavalink">
                    <div class="tabcontenttext3">
                      Purchase Tickets
@@ -268,6 +907,9 @@
  		</div>
        
  		</div>
+		
+		<script src="events.js"></script>
+		
  	</body>
     
     

@@ -668,5 +668,12 @@ a.menutab:visited {
 		margin-top: 0em;
 	}
 
+	.selecttext {
+                font-size: .75em;
+	}
+	
+	.eventdatetext {
+    		font-size: .5em;
+	}
 	
 }

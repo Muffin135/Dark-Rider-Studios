@@ -663,4 +663,10 @@ a.menutab:visited {
 	.albumcaptionbottom:hover {
  	        letter-spacing: 0em;
 	}
+	
+	.select { 
+		margin-top: 0em;
+	}
+
+	
 }

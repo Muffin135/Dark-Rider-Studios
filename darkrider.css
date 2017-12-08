@@ -237,7 +237,7 @@ a.menutab:hover {
 }
 
 .albumcover {
-  width: calc(100%/3);
+  width: calc(100%/3 - 0.02em);
   height: 75%;
   margin-top: .5em;
 }
@@ -248,53 +248,70 @@ img {
 }
 
 .albumpic {
-  width: 100%;
-  height: 75%;
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-size: 0em;
+    letter-spacing: .1em;
+    color: yellow;
+	font-weight: 800;
+	font-family: calibri;
+	font-size: 0em;
+}
+
+@keyframes albumsample {
+	0% {opacity: 1;}
+	100% {opacity: .6;}
+}
+
+
+.albumpic:hover {
+	animation-name: albumsample;
+	animation-duration: .5s;
+	animation-fill-mode: forwards; 
+	cursor: pointer;
+	font-size: 1em;
+}
+
+#pic1 {
   background-image: url("https://user-images.githubusercontent.com/23199807/31806043-4d82df9c-b51a-11e7-86e8-2e3d2885bd40.png");
   background-repeat: no-repeat;
   background-size: contain; 
   background-position: 50%;
 }
 
-.albumpic2 {
-  width: 100%;
-  height: 75%;
+#pic2 {
   background-image: url("https://user-images.githubusercontent.com/23199807/32765886-53566050-c8c1-11e7-9c2c-1f46f24f3c3c.png");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.albumpic3 {
-  width: 100%;
-  height: 75%;
+#pic3 {
   background-image: url("https://user-images.githubusercontent.com/23199807/32766175-917f598a-c8c2-11e7-883f-a640dd9c283b.png");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.albumpic4 {
-  width: 100%;
-  height: 75%;
+#pic4 {
   background-image: url("https://user-images.githubusercontent.com/23199807/32766352-72c80f90-c8c3-11e7-9740-9c9b15248ea5.png");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.albumpic5 {
-  width: 100%;
-  height: 75%;
+#pic5 {
   background-image: url("https://user-images.githubusercontent.com/23199807/31148529-cf063676-a841-11e7-8b7f-45b36784c633.PNG");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
-.albumpic6 {
-  width: 100%;
-  height: 75%;
+#pic6 {
   background-image: url("https://user-images.githubusercontent.com/23199807/32767033-83854656-c8c6-11e7-98b4-af8dafe5287c.png");
   background-size: contain; 
   background-position: 50%;
@@ -469,6 +486,11 @@ a.menutab:visited {
   color: white;
 }
 
+.soldout {
+	opacity: 0.5;
+	color: grey;
+}
+
 .fortix {
 	opacity: 1;
 	color: black;
@@ -533,31 +555,6 @@ a.menutab:visited {
 
 #mex {
   background-image: url("https://farm3.staticflickr.com/2941/15280661181_356bc09a89_b.jpg");
-  background-size: 100%;
-}
-
-#rio {
-  background-image: url("http://www.freewalkertours.com/rio/wp-content/uploads/sites/2/2017/04/o-que-fazer-no-rio-de-janeiro-cristo.jpg");
-  background-size: 100%;
-}
-
-#paolo {
-  background-image: url("http://www.hotelroomsearch.net/im/2014/11/sao-paulo-1.jpg");
-  background-size: 100%;
-}
-
-#monte {
-  background-image: url("https://www.nationalgeographic.com/content/dam/travel/rights-exempt/Travel-2016/Where-The-Locals-Go/Montevideo/cityscape-montevideo-uruguay.jpg");
-  background-size: 100%;
-}
-
-#buenaire {
-  background-image: url("https://lonelyplanetimages.imgix.net/a/g/hi/t/4c410251e0146b2edd2b8b1d64a02047-buenos-aires.jpg?sharp=10&vib=20&w=1200");
-  background-size: 100%;
-}
-
-#santi {
-  background-image: url("https://static01.nyt.com/images/2017/01/29/travel/29HOURS1/29HOURS1-jumbo.jpg");
   background-size: 100%;
 }
 

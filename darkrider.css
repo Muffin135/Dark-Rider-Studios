@@ -463,13 +463,8 @@ a.menutab:visited {
 
 .sidingone {
  height: 100%;
- width: 50%;
+ width: 100%;
  border-right: .01em solid black;
-}
-
-.sidingtwo {
- height: 100%;
- width: calc(50% - .1em);
 }
 
 .eventdate {

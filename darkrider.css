@@ -10,8 +10,19 @@ body {
   padding: 0;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 }
 
+/** Hidden until screen drops below 350px **/
+.warning {
+  width: 25%;
+  height: 25%;
+  color: grey;
+  display: none;
+  font-family: calibri;
+}
+
+/* Where everything goes */ 
 .container1 {
   width: 99%;
   height: 99%;
@@ -19,8 +30,10 @@ body {
   min-height: 50%;
   margin: 0;
   padding: 0;
+  position: absolute;
 }
 
+/* Where the logo and title go */
 .logobar {
  width: 100%;
  height: 10%;
@@ -90,6 +103,7 @@ a.menutab:hover {
 }
 
 .carouselcontainerouter {
+  font-family: calibri;
   height: 85%; 
   width: 100%;
   display: flex;
@@ -133,14 +147,12 @@ a.menutab:hover {
 }
 
 .pagetexttitle {
-  font-family: Calibri;
   font-size: 1.5em;
   font-weight: 699;
   letter-spacing: .4em;
 }
 
 .pagetextcaption {
-  font-family: Calibri;
   font-size: 1.25em;
   font-weight: 500;
   letter-spacing: .5em;
@@ -191,21 +203,18 @@ a.menutab:hover {
 }
 
 .tabcontenttext1 {
-  font-family: Calibri;
   font-size: 1em;
   letter-spacing: .1em;
   margin-left: .75em;
 }
 
 .tabcontenttext2 {
-  font-family: Calibri;
   font-size: small;
   letter-spacing: .1em;
   margin-left: .75em;
 }
 
 .tabcontenttext3 {
-  font-family: Calibri;
   font-size: medium;
   letter-spacing: .1em;
   margin-left: .75em;
@@ -247,6 +256,7 @@ img {
   background-position: 50%;
 }
 
+/* The album cover, can be clicked to play sample */
 .albumpic {
     width: 100%;
     height: 75%;
@@ -267,7 +277,7 @@ img {
 	100% {opacity: .6;}
 }
 
-
+/* Will show the play sample option */
 .albumpic:hover {
 	animation-name: albumsample;
 	animation-duration: .5s;
@@ -331,7 +341,6 @@ img {
   justify-content: center;
   width: 100%;
   height: 50%;
-  font-family: calibri;
   font-size: .9em;
   font-weight: bold;
 }
@@ -343,7 +352,6 @@ img {
   justify-content: center;
   width: 100%;
   height: 50%;
-  font-family: calibri;
   font-size: 1em;
   transition: 0.5s ease all;
 }
@@ -358,6 +366,7 @@ a.menutab:visited {
  color: black; 
 }
 
+/* The container that holds the ticket purchase window */
 .purchasecontainer {
  display: none;
  width: 80%; 
@@ -380,7 +389,6 @@ a.menutab:visited {
 }
 
 .selecttext {
-  font-family: Calibri;
   font-weight: 500;
   letter-spacing: .1em;
 }
@@ -401,6 +409,7 @@ a.menutab:visited {
   flex-wrap: wrap;
 }
 
+/* The frame for the checkout section */
 .checkout {
   width: calc(25% - .05em);
   height: calc(100% - .05em);
@@ -429,11 +438,11 @@ a.menutab:visited {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	font-family: calibri; 
 	letter-spacing: .3em;
 	font-size: 1em;
 }
 
+/* Displays the final price, default 0 */
 .finalprice {
 	width: calc(100% - .05em);
 	height: calc(50% - .05em);
@@ -441,9 +450,9 @@ a.menutab:visited {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	font-family: calibri; 
 }
 
+/* The button that is clicked to purchase, is default deactivated */
 .proceed {
 	width: calc(100% - .06em);
 	height: calc(25% - .1em);
@@ -455,7 +464,6 @@ a.menutab:visited {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	font-family: calibri; 
 	letter-spacing: .1em;
 	font-size: 1em;
 	z-index: -1;
@@ -467,6 +475,7 @@ a.menutab:visited {
  border-right: .01em solid black;
 }
 
+/* The tab that allows for a ticket selection */
 .eventdate {
   height: calc(100%/5 - .01em);
   width: 100%;
@@ -481,16 +490,19 @@ a.menutab:visited {
   color: white;
 }
 
+/* Indicates not avaible */
 .soldout {
 	opacity: 0.5;
 	color: grey;
 }
 
+/* For an active purchase button */
 .fortix {
 	opacity: 1;
 	color: black;
 }
 
+/* For an active purchase button */
 .fortix:hover {
 	animation-name: proceedhover;
 	animation-duration: .5s;
@@ -504,15 +516,17 @@ a.menutab:visited {
 		letter-spacing: 0.3em;}
 }
 
-
+/* Hides elements */
 .change {
 	display: none;
 }
 
+/* CSS class that will enlarge the tab window */
 .buy {
 	height: 85%;
 }
 
+/* Shows elements */
 .add {
 	display: flex;
 }
@@ -543,22 +557,10 @@ a.menutab:visited {
   background-size: 100%;
 }
 
-#tor {
-  background-image: url("https://www.bioconnect.com/wp-content/uploads/2017/02/toronto-skyline.jpg");
-  background-size: 100%;
-}
-
-#mex {
-  background-image: url("https://farm3.staticflickr.com/2941/15280661181_356bc09a89_b.jpg");
-  background-size: 100%;
-}
 
 .eventdatetext {
-  font-family: calibri;
   font-size: 1em; 
 }
-
-
 
 .eventdate:hover {
   animation-name: ticketchoice;
@@ -575,7 +577,8 @@ a.menutab:visited {
         color: black;}
 }
 
-@media only screen and (max-width: 800px) {
+/* Mobile layout */
+@media screen and (max-width: 800px) {
 	
   .container1 {
 		width: 100%;
@@ -583,6 +586,12 @@ a.menutab:visited {
 		border: none;
 	}
 	
+	/* Hides the website title, shows just the logo */
+	.logotitle {
+		display: none;
+	}
+	
+	/* Changes the menu to drop down mode */
 	.mobile {
 		font-family: Impact;
 		letter-spacing: 1em;
@@ -615,21 +624,18 @@ a.menutab:visited {
 	}
 	
 	.tabcontenttext1 {
-		font-family: Calibri;
 		font-size: .75em;
 		letter-spacing: 0em;
 		margin-left: .75em;
 	}
 
 	.tabcontenttext2 {
-		font-family: Calibri;
 		font-size: .75em;
 		letter-spacing: 0em;
 		margin-left: .75em;
 	}
 
 	.tabcontenttext3 {
-		font-family: Calibri;
 		font-size: .75em;
 		letter-spacing: 0em;
 		margin-left: .75em;
@@ -668,4 +674,16 @@ a.menutab:visited {
     		font-size: .5em;
 	}
 	
+}
+
+/* Displays the resolution warning */
+@media screen and (max-width: 350px) {
+	
+  .container1 {
+		display: none;
+	}
+	
+  .warning {
+	  display: block;
+  }
 }

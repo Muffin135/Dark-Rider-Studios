@@ -58,7 +58,7 @@ body {
  width: 20%;
  height: 80%;
  transition: 1s ease all;
- background-image: url("https://user-images.githubusercontent.com/23199807/31148529-cf063676-a841-11e7-8b7f-45b36784c633.PNG");
+ background-image: url("logo.PNG");
  background-repeat:no-repeat;
  background-size:contain;
  background-position: center; 
@@ -177,7 +177,7 @@ a.menutab:hover {
 .tabimage {
   width: 10%;
   height: 100%;
-  background-image: url("http://themostdefinitely.com/wp-content/uploads/2015/06/giorgio.jpg");
+  background-image: url("flayman.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   background-position: center;
@@ -287,42 +287,42 @@ img {
 }
 
 #pic1 {
-  background-image: url("https://user-images.githubusercontent.com/23199807/31806043-4d82df9c-b51a-11e7-86e8-2e3d2885bd40.png");
+  background-image: url("hoeing.png");
   background-repeat: no-repeat;
   background-size: contain; 
   background-position: 50%;
 }
 
 #pic2 {
-  background-image: url("https://user-images.githubusercontent.com/23199807/32765886-53566050-c8c1-11e7-9c2c-1f46f24f3c3c.png");
+  background-image: url("madness.png");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 #pic3 {
-  background-image: url("https://user-images.githubusercontent.com/23199807/32766175-917f598a-c8c2-11e7-883f-a640dd9c283b.png");
+  background-image: url("suckins.png");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 #pic4 {
-  background-image: url("https://user-images.githubusercontent.com/23199807/32766352-72c80f90-c8c3-11e7-9740-9c9b15248ea5.png");
+  background-image: url("place.png");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 #pic5 {
-  background-image: url("https://user-images.githubusercontent.com/23199807/31148529-cf063676-a841-11e7-8b7f-45b36784c633.PNG");
+  background-image: url("logo.PNG");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;
 }
 
 #pic6 {
-  background-image: url("https://user-images.githubusercontent.com/23199807/32767033-83854656-c8c6-11e7-98b4-af8dafe5287c.png");
+  background-image: url("thunder.png");
   background-size: contain; 
   background-position: 50%;
   background-repeat: no-repeat;

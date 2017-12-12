@@ -1,4 +1,4 @@
-unction changeContent(elem){
+function changeContent(elem){
 	
 	/* Enlarges the tab window */
 	document.getElementById("body-one").classList.toggle("buy");

@@ -11,6 +11,13 @@
 	</head>
 
 	<body>
+		
+		<!-- The portion from the warning sign to menubar is the same as in all pages - see store tab for the full break down -->
+		<div class="warning">
+			Cannot Display At This Resolution
+		</div>
+	
+	
 		<div class="container1">
 			<div class="logobar">
 				<div class="logotitle">
@@ -85,7 +92,12 @@
 				<!-- End of title bar -->
 				  <div class="contentbody">
         <!-- da cutoff -->
+		
+			<!-- The standard layout for a store listing -->
             <div class="albumcover">
+				
+			  <!-- The actual cover - can be clicked to play a sample -->
+			  <!-- Click to toggle the play/pause -->
               <div class="albumpic" id="pic1" onclick="playHoeing(this)">
               </div>
               <div class="albumcaption">
@@ -101,7 +113,7 @@
         
         <!-- da cutoff -->
             <div class="albumcover">
-              <div class="albumpic" id="pic2">
+              <div class="albumpic" id="pic2" onclick="playMadness(this)">
               </div>
               <div class="albumcaption">
                 <div class="albumcaptiontop">
@@ -117,7 +129,7 @@
         
         <!-- da cutoff -->
             <div class="albumcover">
-              <div class="albumpic" id="pic3">
+              <div class="albumpic" id="pic3" onclick="playSuckins(this)">
               </div>
               <div class="albumcaption">
                 <div class="albumcaptiontop">
@@ -132,7 +144,7 @@
         
         <!-- da cutoff -->
             <div class="albumcover">
-              <div class="albumpic" id="pic4">
+              <div class="albumpic" id="pic4" onclick="playPlace(this)">
               </div>
               <div class="albumcaption">
                 <div class="albumcaptiontop">
@@ -147,7 +159,7 @@
         
         <!-- da cutoff -->
             <div class="albumcover">
-              <div class="albumpic" id="pic5">
+              <div class="albumpic" id="pic5" onclick="playCollections(this)">
               </div>
               <div class="albumcaption">
                 <div class="albumcaptiontop">
@@ -162,7 +174,7 @@
         
         <!-- da cutoff -->
             <div class="albumcover">
-              <div class="albumpic" id="pic6">
+              <div class="albumpic" id="pic6" onclick="playThunder(this)">
               </div>
               <div class="albumcaption">
                 <div class="albumcaptiontop">
@@ -184,6 +196,10 @@
 		</div>
 		
 		<audio src="hoeing.ogg" type="audio/ogg" id="hoeing"></audio>
+		<audio src="madness.ogg" type="audio/ogg" id="madness"></audio>
+		<audio src="suckins.ogg" type="audio/ogg" id="suckins"></audio>
+		<audio src="collections.ogg" type="audio/ogg" id="collections"></audio>
+		<audio src="thunder.ogg" type="audio/ogg" id="thunder"></audio>
 		
 		<script src="darkrider.js"></script>
 		

@@ -121,7 +121,7 @@ function playThunder() {
     audioElem.pause();
 }
 
-function playThunder() {
+function playCollections() {
   var audioElem = document.getElementById('collections');
   if (audioElem.paused)
     audioElem.play();

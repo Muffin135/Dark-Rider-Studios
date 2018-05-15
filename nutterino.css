@@ -1,0 +1,16 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.mainbox {
+ height: 100%;
+ width: 100%;
+ display: flex;
+ flex-wrap: wrap;
+}
